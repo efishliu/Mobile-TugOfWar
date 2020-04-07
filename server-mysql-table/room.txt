@@ -1,0 +1,10 @@
+mysql> create table room(
+    -> roomid int unsigned not null auto_increment,
+    -> rednumber int unsigned not null,
+    -> bluenumber int unsigned not null,
+    -> redcount int unsigned not null,
+    -> bluecount int unsigned not null,
+    -> primary key(roomid)
+    -> )ENGINE=InnoDB DEFAULT CHARSET=utf8
+    -> ;
+Query OK, 0 rows affected (0.02 sec)

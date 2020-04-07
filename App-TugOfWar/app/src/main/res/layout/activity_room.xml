@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wait_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomActivity"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/room_roomid_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/roomid"
+                android:textColor="@color/CommonTitle"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/room_roomid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/room_roomcount_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/roomcount"
+                android:textColor="@color/CommonButtonPress"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/room_roomcount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/room_redteam_linear"
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/room_redteam_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+                    android:text="_____ 红队 _____"
+                    android:textColor="@color/_e64340"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/red1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/_e64340"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/red2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/_e64340"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/red3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/_e64340"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/red4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/_e64340"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/red5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/_e64340"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/room_blueteam_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/room_blueteam_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+                    android:text="_____ 蓝队 _____"
+                    android:textColor="@color/_4471a3"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/blue1"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/_4471a3"
+                    android:layout_height="40dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/blue2"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/_4471a3"
+                    android:layout_height="40dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/blue3"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/_4471a3"
+                    android:layout_height="40dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/blue4"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/_4471a3"
+                    android:layout_height="40dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/blue5"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/_4471a3"
+                    android:layout_height="40dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/wait_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/wait_room"
+            android:background="@color/White"
+            >
+
+            <ImageView
+                android:id="@+id/waitroom_break"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@color/White"
+                android:src="@drawable/wait"/>
+
+            <Button
+                android:id="@+id/room_playing"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/waitroom_break"
+                android:background="@color/White"
+                android:text="@string/playing"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/room_tip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/room_playing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

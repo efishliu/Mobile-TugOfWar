@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/preview_"
+    tools:context=".GameMainActivity">
+
+    <RelativeLayout
+        android:id="@+id/room_u"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/game_room"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+        android:id="@+id/room_one"
+        android:layout_width="35dp"
+        android:layout_height="48dp"
+        android:background="@drawable/one" />
+
+        <Button
+            android:id="@+id/createRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/room_one"
+            android:background="@color/White"
+            android:text="@string/createroom" />
+
+        <ImageView
+            android:id="@+id/room_two"
+            android:layout_width="35dp"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@+id/createRoom"
+            android:background="@drawable/two" />
+
+        <Button
+            android:id="@+id/joinRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/room_two"
+            android:background="@color/White"
+            android:text="@string/joinroom" />
+
+        <ImageView
+            android:id="@+id/room_three"
+            android:layout_width="37dp"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@+id/joinRoom"
+            android:background="@drawable/three" />
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/room_three"
+            android:background="@color/White"
+            android:text="@string/history" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/name_break"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/name_break"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/room_name"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/log_p" />
+
+        <TextView
+        android:id="@+id/game_main_username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/room_name"
+        android:textSize="20sp"
+        android:text="@string/username" />
+
+        <TextView
+            android:id="@+id/game_main_username"
+            android:layout_width="wrap_content"
+            android:text="@string/isnull"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/game_main_username_text"/>
+    </RelativeLayout>
+
+
+<RelativeLayout
+android:id="@+id/room_id"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+app:layout_constraintTop_toBottomOf="@+id/name">
+
+<ImageView
+    android:id="@+id/iv_roon_id"
+    android:layout_centerVertical="true"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="50dp"
+    android:src="@drawable/log_s" />
+
+
+
+<TextView
+    android:id="@+id/game_main_userid_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"
+    android:layout_toRightOf="@+id/iv_roon_id"
+    android:textSize="20sp"
+    android:text="@string/userid" />
+
+
+    <TextView
+        android:id="@+id/game_main_userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isnull"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/game_main_userid_text"/>
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

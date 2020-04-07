@@ -1,0 +1,15 @@
+mysql> create database app;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use app
+Database changed
+mysql> create table userinfo(
+    -> userid int unsigned not null auto_increment,
+    -> username varchar(50) not null unique,
+    -> passwd varchar(50) not null,
+    -> primary key(userid)
+    -> )ENGINE=InnoDB DEFAULT CHARSET=utf8
+    -> ;
+Query OK, 0 rows affected (0.02 sec)
+
+

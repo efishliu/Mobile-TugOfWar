@@ -1,0 +1,5 @@
+mysql> create table roominfo(
+    -> roomid int,
+    -> username varchar(50),
+    -> team varchar(20))ENGINE=InnoDB DEFAULT CHARSET=utf8;
+Query OK, 0 rows affected (0.01 sec)

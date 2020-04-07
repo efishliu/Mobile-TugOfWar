@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="midnightblue">#191970</color><!--中灰兰色 -->
+
+    <color name="darkslategray">#2F4F4F</color><!--暗瓦灰色 -->
+
+    <color name="CommonTitle">#2f4f4f</color>
+    <color name="CommonButton">#008080</color>
+    <color name="CommonButtonPress">#2f4f4f</color>
+    <color name="CommonPop">#EEEEEE</color>
+    <color name="CommonText">#FFA500</color>
+    <color name="CommonTextSelect">#FF7F18</color>
+    <color name="CommonSelect">#008080</color>
+
+    <color name="_3e363d">#3e363d</color>
+    <color name="White">#fefdfd</color>  <!--白色 -->
+
+    <color name="ivory">#FFFFF0</color><!--象牙色 -->
+
+    <color name="Black">#000000</color>
+    <color name="_3c3c3c">#3c3c3c</color>
+    <color name="_969696">#969696</color>
+    <color name="eeeeee">#eeeeee</color>
+    <!--黑色 -->
+    <color name="_66ffffff">#66ffffff</color>
+    <color name="ffffff">#ffffff</color>
+    <color name="f3ffffff">#f3ffffff</color>
+
+    <color name="f6f6f6">#f6f6f6</color>
+    <color name="b2afb1">#b2afb1</color>
+    <color name="d9d9d9">#d9d9d9</color>
+    <color name="dcdcdc">#dcdcdc</color>
+    <color name="aaaaaa">#aaaaaa</color>
+    <color name="common_bg">#f0f0f0</color>
+
+    <color name="ff7f18">#ff7f18</color>
+    <color name="b4b4b4">#b4b4b4</color>
+    <color name="f5f5f5">#f5f5f5</color>
+    <color name="_585858">#585858</color>
+    <color name="c4c4c4">#c4c4c4</color>
+    <color name="_171717">#171717</color>
+    <color name="_8b8b8b">#8b8b8b</color>
+    <color name="b7b5b7">#b7b5b7</color>
+    <color name="efc70b">#efc70b</color>
+    <color name="_33ffffff">#33ffffff</color>
+    <color name="_80ffffff">#80ffffff</color>
+    <color name="e5e5e5">#e5e5e5</color>
+    <color name="a7a4a7">#a7a4a7</color>
+    <color name="_dbdbdb">#dbdbdb</color>
+    <color name="title_color">#333333</color>
+
+    <color name="cc000000">#CC000000</color>
+    <color name="ff3b30">#ff3b30</color>
+    <color name="d1d1d1">#d1d1d1</color>
+    <color name="cecece">#cecece</color>
+    <color name="_4471a3">#4471a3</color>
+    <color name="_ff7f18">#ff7f18</color>
+    <color name="_f3f3f3">#f3f3f3</color>
+    <color name="_e64340">#e64340</color>
+    <color name="_d0d0d0">#D0D0D0</color>
+    <color name="_7f7f7f">#7f7f7f</color>
+    <color name="_282828">#282828</color>
+    <color name="_dcdcdc">#dcdcdc</color>
+    <color name="_aaaaaa">#aaaaaa</color>
+</resources>

@@ -1,0 +1,6 @@
+mysql> create table mygame(
+    -> roomid int,
+    -> username varchar(50),
+    -> mycount int,
+    -> result varchar(20))ENGINE=InnoDB DEFAULT CHARSET=utf8;
+Query OK, 0 rows affected (0.04 sec)

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/max"
+    android:background="@drawable/preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/sigin_u"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/max"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/signin_text"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="@string/signin"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:id="@+id/login_text"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/login"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/signin_text"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

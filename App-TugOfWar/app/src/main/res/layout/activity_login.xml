@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login" />
+
+    <RelativeLayout
+        android:id="@+id/login_u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logimage"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/logimage">
+
+        <ImageView
+            android:id="@+id/iv_userIconName"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/log_p" />
+
+        <TextView
+            android:id="@+id/login_userid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_userIconName"
+            android:textSize="20sp"
+            android:text="@string/userid" />
+
+        <EditText
+            android:id="@+id/login_userid"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/login_userid_text"
+            android:ems="10"
+            android:hint="请输入"
+            android:textColor="@color/midnightblue"
+            android:textColorHint="@color/darkslategray"
+            android:textSize="15sp"
+            android:inputType="textPersonName"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_userPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/login_u"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/iv_userIconPwd"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="35dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/log_s" />
+
+        <TextView
+            android:id="@+id/login_passwd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_userIconPwd"
+            android:textSize="20sp"
+            android:text="@string/passwd" />
+
+        <EditText
+            android:id="@+id/login_passwd"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/login_passwd_text"
+            android:ems="10"
+            android:hint="请输入"
+            android:inputType="textPassword"
+            android:textColor="@color/midnightblue"
+            android:textColorHint="@color/darkslategray"
+            android:textSize="15sp"/>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/login_tip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/login_login_bt"/>
+
+    <Button
+        android:id="@+id/login_login_bt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        app:layout_constraintTop_toBottomOf="@+id/rl_userPassword"/>
+</android.support.constraint.ConstraintLayout>

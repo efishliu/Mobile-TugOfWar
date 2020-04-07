@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="84dp">
+
+        <com.example.liugang.tugofwar.CountdownView
+            android:id="@+id/view_countdown"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/playing_redcount"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="252dp"
+            android:layout_marginBottom="221dp"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="#e64340"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/playing_bluecount"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="253dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="#4471a3"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="318dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/ff3b30" />
+
+            <TextView
+                android:id="@+id/text_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/_4471a3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/playing_mycount"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="212dp"
+            android:layout_marginLeft="212dp"
+
+            android:layout_marginTop="376dp"
+
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="#FF7F18"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="376dp"
+            android:gravity="center"
+            android:text="@string/mycount"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

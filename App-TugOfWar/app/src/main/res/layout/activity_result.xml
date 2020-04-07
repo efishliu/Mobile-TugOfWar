@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:background="@drawable/result">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="@string/isnull"
+            android:textColor="@color/ff3b30"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/image_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="108dp"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wait_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/result"
+        android:background="@color/White"
+        >
+    <ImageView
+        android:id="@+id/mian_one"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@color/White"
+        android:src="@drawable/main"/>
+
+        <Button
+            android:id="@+id/return_main"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mian_one"
+            android:text="@string/returnmain"
+            android:background="@color/White"
+            android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/history_one"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@color/White"
+        android:layout_toRightOf="@+id/return_main"
+        android:src="@drawable/three"/>
+
+        <Button
+            android:id="@+id/view_history"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/history_one"
+            android:text="@string/viewhistory"
+            android:background="@color/White"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

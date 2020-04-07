@@ -1,0 +1,4 @@
+mysql> create table start(
+    -> roomid int,
+    -> flag int)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+Query OK, 0 rows affected (0.01 sec)
