@@ -12,8 +12,15 @@ Mobile-TugOfWar是一个手机拔河游戏APP，通过手机传感器来对手�
 <div align=center><img src="https://github.com/efishliu/Mobile-TugOfWar/blob/master/image/flow-chart.png" width = 50% height = 50% /></div>  
 
 ## 系统主要功能模块
-* **客户端APP：**  基于Android平台进行开发，主要是app的设计与实现，并采集安卓手机上加速度传感器的数据（左右摇/上下摇），并将其传送到服务器。同时接收服务端返回的计数统计结果，实时在客户端上显示这一结果。  
+* **客户端APP：**  基于Android平台进行开发，主要是app的设计与实现，并采集安卓手机上加速度传感器的数据（左右摇/上下摇），并将其传送到服务器。同时接收服务端返回的计数统计结果，实时在客户端上显示这一结果。 
 
-| login.jsp | 登录的http请求处理 | signin.jsp | 注册的http请求处理 |
-| createroom.jsp | 创建房间的http请求处理 | joinroom.jsp | 加入房间的http请求处理 |
+* **服务器端：**  对手机端传来的数据进行处理并返回。  
+
+| 代码 | 描述 | 代码 | 描述 |  
+|:----: |:----: |:----: |:----:|  
+| [login.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/login.jsp) | 登录的http请求处理 | [signin.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/signin.jsp) | 注册的http请求处理 |  
+| [createroom.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/createroom.jsp) | 创建房间的http请求处理 | [joinroom.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/joinroom.jsp) | 加入房间的http请求处理 |  
+| [start.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/start.jsp) | 开始游戏的http请求处理 | [updateroom.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/updateroom.jsp) | 实时更新房间的http请求处理 |  
+| [updatecount.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/updatecount.jsp) | 实时更新摇晃次数的http请求处理 | [finish.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/finish.jsp) | 游戏结束的http请求处理 |  
+| [history.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/history.jsp) | 查询历史记录的http请求处理 |   |   |  
 
