@@ -9,8 +9,11 @@ Mobile-TugOfWar是一个手机拔河游戏APP，通过手机传感器来对手�
 数据访问层主要对数据库进行操作，包括增加数据、修改数据和删除数据。业务逻辑层基于数据访问层之上，它主要针对业务流程来实现系统的功能。控制层又基于业务逻辑层之上，主要控制请求流转，并处理业务逻辑层通过数据访问层得到的数据在视图层进行展示。视图层为软件提供展示界面。  
 
 下图描述了整个游戏的运行流程：  
-<div align=center><img src="https://github.com/efishliu/Intelligent-lamp/blob/master/image/framework.png" width = 50% height = 50% /></div>  
+<div align=center><img src="https://github.com/efishliu/Mobile-TugOfWar/blob/master/image/flow-chart.png" width = 50% height = 50% /></div>  
 
 ## 系统主要功能模块
 * **客户端APP：**  基于Android平台进行开发，主要是app的设计与实现，并采集安卓手机上加速度传感器的数据（左右摇/上下摇），并将其传送到服务器。同时接收服务端返回的计数统计结果，实时在客户端上显示这一结果。  
+
+| login.jsp | 登录的http请求处理 | signin.jsp | 注册的http请求处理 |
+| createroom.jsp | 创建房间的http请求处理 | joinroom.jsp | 加入房间的http请求处理 |
 
