@@ -1,6 +1,9 @@
 ## 概述  
 Mobile-TugOfWar是一个手机拔河游戏APP，通过手机传感器来对手机摇动的状态进行计数，玩家可以加入不同的阵营进行“拔河PK”。
-我们团队开发的软件是基于Android的手机拔河APP，通过http协议与云服务器进行通信，实现拔河时的数据实时在服务器端进行处理。  
+我们团队开发的软件是基于Android的手机拔河APP，通过http协议与云服务器进行通信，实现拔河时的数据实时在服务器端进行处理。
+
+## 工具和环境
+centos6.5操作系统、tomcat8、jdk9、MySQL5.5、eclipse、android studio、Xshell
 
 ## 系统架构与处理流程  
 软件采用C/S模式，服务器负责对收集到的所以客户端数据进行处理，并将结果返回到手机，以可视化形式显示；客户端负责采集安卓手机上加速度传感器的数据（左右摇/上下摇），并将其传送到服务器，同时接收服务端返回的计数统计结果，实时在客户端上显示这一结果。  
@@ -39,3 +42,15 @@ HTTP通信接口：
 | [updatecount.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/updatecount.jsp) | 实时更新摇晃次数的http请求处理 | [finish.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/finish.jsp) | 游戏结束的http请求处理 |  
 | [history.jsp](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-jsp/history.jsp) | 查询历史记录的http请求处理 |   |   |  
 
+* **MySQL数据库表描述(server)：**  
+
+| 表名 | Key | 表的描述 |  
+|:----:|:----:|:----:|  
+|[userinfo](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-mysql-table/userinfo.txt) | userid、username、passwd | 用户信息表 |
+|[mygame](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-mysql-table/mygame.txt) | roomid、username、mycount、result | 用户历史战绩表 |
+|[room](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-mysql-table/room.txt) | roomid、rednumber、bluenumber、redcount、bluecount | 房间对战进程表 |
+|[roominfo](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-mysql-table/roominfo.txt) | roomid、username、team | 游戏房间信息表 |
+|[start](https://github.com/efishliu/Mobile-TugOfWar/blob/master/server-mysql-table/start.txt) | roomid、flag | 开始游戏标志表 |
+
+
+参考书籍：[Android第一行代码(第二版)	郭霖著]()
