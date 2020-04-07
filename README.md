@@ -12,7 +12,22 @@ Mobile-TugOfWar是一个手机拔河游戏APP，通过手机传感器来对手�
 <div align=center><img src="https://github.com/efishliu/Mobile-TugOfWar/blob/master/image/flow-chart.png" width = 50% height = 50% /></div>  
 
 ## 系统主要功能模块
-* **客户端APP：**  基于Android平台进行开发，主要是app的设计与实现，并采集安卓手机上加速度传感器的数据（左右摇/上下摇），并将其传送到服务器。同时接收服务端返回的计数统计结果，实时在客户端上显示这一结果。 
+* **客户端APP：**  基于Android平台进行开发，主要是app的设计与实现，并采集安卓手机上加速度传感器的数据（左右摇/上下摇），并将其传送到服务器。同时接收服务端返回的计数统计结果，实时在客户端上显示这一结果。  
+
+HTTP通信接口：  
+内部接口：Http回调监听接口。实现客户端服务器之间的Http请求处理。[HttpCallbackListener.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/HttpCallbackListener.java)  
+回调接口的实现：[HttpUtil.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/HttpUtil.java)(注意修改IP地址与端口，默认：~~106.13.37.201:8000~~)
+
+| 代码 | 描述 | 代码 | 描述 |  
+|:----: |:----: |:----: |:----:| 
+| [MainActivity.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/MainActivity.java) | APP主界面 | [GameMainActivity.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/GameMainActivity.java) | 登录后主界面 | 
+| [SigninActivity.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/SigninActivity.java) | 注册界面 | [LoginActivity.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/LoginActivity.java) | 登录界面 | 
+| [JoinRoomActivity.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/JoinRoomActivity.java) | 加入房间界面 | [RoomActivity.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/RoomActivity.java) | 房间等待界面 | 
+| [PlayingActivity.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/PlayingActivity.java) | 游戏界面 | [ResultActivity.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/ResultActivity.java) | 游戏结果界面 | 
+| [MyHistoryActivity.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/MyHistoryActivity.java) | 个人战绩界面 | []() |  | 
+| [CountdownView.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/CountdownView.java) | 时间流逝圆盘 | [ShakeCapture.java](https://github.com/efishliu/Mobile-TugOfWar/blob/master/App-TugOfWar/app/src/main/java/com/example/liugang/tugofwar/ShakeCapture.java) | 抖动次数获取 | 
+
+
 
 * **服务器端：**  对手机端传来的数据进行处理并返回。  
 
